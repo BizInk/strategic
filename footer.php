@@ -95,7 +95,10 @@ $column_1_title = get_field('column_1_title', 'options');
 $column_2_title = get_field('column_2_title', 'options');
 $column_3_title = get_field('column_3_title', 'options');
 $newsletter_text = get_field('newsletter_text', 'options');
-$newsletter_form = get_field('newsletter_form', 'options'); ?>
+$newsletter_form = get_field('newsletter_form', 'options');
+
+echo get_field('custom_embed_code_after_body','options');
+?>
 
  <footer>
 	<div class="container">
@@ -187,7 +190,10 @@ $newsletter_form = get_field('newsletter_form', 'options'); ?>
 
 </div><!-- #page we need this extra closing tag here -->
 
-<?php wp_footer(); ?> 
+<?php
+echo get_field('custom_embed_code_-_footer','options');
+wp_footer();
+?> 
 <script>
 
 	var bizinklucaAjax = {"ajaxurl":"https:\/\/bizinkluca.betatesting87.com\/wp-admin\/admin-ajax.php"};
@@ -319,5 +325,4 @@ $newsletter_form = get_field('newsletter_form', 'options'); ?>
 <?php } ?>
 
 </body>
-
 </html>

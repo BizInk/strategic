@@ -31,7 +31,16 @@ $google_my_business = get_field('google_my_business', 'options'); ?>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<?php wp_head(); ?>
+	<?php 
+	wp_head();
+	echo get_field('custom_embed_code_head','options');
+	$css = get_field('header_custom_css','options');
+	if( !empty($css) ): ?>
+		<style type="text/css">
+			<?= $css; ?>
+		</style>
+	<?php endif; ?>
+	
 </head>
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
