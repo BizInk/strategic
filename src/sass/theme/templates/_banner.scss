@@ -1,0 +1,14 @@
+.banner-section { 
+  .banner-left {
+    display: flex;
+    align-items: center;
+
+    .banner-content-wrap {
+      max-width: 543px;
+      @include media-breakpoint-down(md){
+        text-align: center;
+      }
+    }
+  }
+}
+

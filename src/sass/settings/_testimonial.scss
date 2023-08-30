@@ -1,0 +1,82 @@
+.testimonial-section{
+    .testimonial-bg{
+        background-color:$primary;
+    }
+    .testimonial-slider {       
+        .testimonial-slide > div {
+            .video-part {             
+            }
+            .client-text-wrap {
+                color:$white;
+                span{
+                    color: rgba($white, 0.5);
+                }            
+                a{
+                    color:$white;                   
+                }
+            }
+        }
+    }
+}
+
+.testimonial-list-section{
+    .client-avtar-wrap{
+        &:after{
+            background-image: radial-gradient($primary 3px, transparent 0);
+        }         
+    }
+    .client-word {            
+            a{      
+                &:hover{          
+                    h6{
+                     color:$primary;    
+                    }
+                }
+            }
+        }
+}
+
+.client-say-section{
+    .editor-design, .review-box{
+        color:$white;
+        h2,h5,p,span{
+          color:$white;
+        }
+        .rate{
+            color:#FFEE00;
+         }
+    }    
+    .white-btn{
+        img{
+            filter: brightness(0) saturate(100%) invert(41%) sepia(62%) saturate(2646%) hue-rotate(157deg) brightness(96%) contrast(99%);
+        }
+        &:hover{
+            img{
+                filter:unset;
+            }
+        }
+    }     
+    
+    .slick-dots li.slick-active button::before {
+        color: #ffee00;        
+    }
+    .review-box.slick-slide.slick-current.slick-active{
+        .review-box-inner-wrap{
+          background-color:$neutral-blue;
+           i.underline:before {
+               background-color:$white;
+            }
+        }
+    }
+    .review-box.slick-slide.slick-current.slick-active + .review-box{
+      background-color:#028A98;
+    }
+    button.slick-arrow{
+        background: #048e9c;
+    }
+    .slick-dots li button:before {  
+        opacity: 1;
+        color:$white;                   
+    }
+
+}

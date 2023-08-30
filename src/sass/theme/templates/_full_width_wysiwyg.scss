@@ -1,0 +1,129 @@
+%ul-listing{
+    margin: 0px 0 1rem;
+    padding: 0px;
+    text-align: left;
+    li {
+        list-style: none;
+        padding-left:30px;
+        position: relative;
+        &:before {
+            background-image: url(../images/editor-li-icon.png);
+            content: "";
+            width:20px;
+            height:20px;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            @include background-set(unset, contain, no-repeat);
+        }
+    }
+}
+%ol-listing{ 
+    margin: 0px 0 1rem;
+    padding: 0px;
+    text-align: left;
+    counter-reset: li;
+    li{
+        list-style-position: inside;
+        padding-left: 30px;
+        position: relative;
+        &::marker{
+            display: none;
+            content: none;
+        }
+        &:before {
+            content: counters(li, '.') '. ';
+            counter-increment: li;
+            position: absolute;
+            left: 0;
+            top: 0px;
+        }
+    }
+}
+%blockquote{ 
+    font-size: 1.8rem;
+    font-style: italic;
+    margin: 15px 0;
+    padding-left: 15px;   
+    position: relative;    
+    text-align: left;
+    p{
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.default-content, .editor-design{
+	font-size: 1.8rem; //18px
+	line-height: 1.5;
+    @include media-breakpoint-down(md) {
+        font-size: 1.6rem; //16px
+    }
+    p, ul, li, ol, a:not(.btn), span{
+        font-size: 1.8rem; //18px
+        line-height: 1.5;
+        @include media-breakpoint-down(md) {
+            font-size: 1.6rem; //16px
+        }
+    }
+	ul{
+		@extend %ul-listing;
+	}
+	ol{
+        @extend %ol-listing;
+	}
+	a:not(.btn){		
+        text-decoration: none;		
+	}    
+	blockquote{
+        @extend %blockquote;
+	}
+
+    .btn {
+        margin-top: 20px;
+        + .btn{
+            margin-left: 15px;
+        }
+    }
+    p + .btn{
+        margin-top: 15px;
+        @include media-breakpoint-down(md) {
+            margin-top: 10px;
+        }
+    }
+	h1, h2, h3, h4, h5{		
+	  	margin-top: 20px;
+	  	margin-bottom: 15px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+        }
+        > span{
+            font-size: inherit;
+            line-height: inherit;
+        }
+	}
+	&.content-md{
+        font-size: 1rem;
+		p, ul, li, ol, a:not(.btn), span{
+			font-size: 1.6rem;
+			line-height: 1.4;
+		}
+	}
+}
+
+
+.full-width-wysiwyg{
+    position: relative; 
+    margin-bottom:60px;  
+    @include media-breakpoint-down(md){
+        margin-bottom:40px;          
+    }   
+    .editor-design{        
+        max-width:890px;
+        margin:0 auto 30px;    
+        a:not(.btn){		
+            text-decoration: none;		
+        }     
+    }
+} 

@@ -1,0 +1,94 @@
+.blog-listing-section{   
+    .blog-inner-wrap{       
+         box-shadow: 2px 5px 15px rgba($dark, 0.15);   
+        .blog-details{
+            color:$dark;      
+            background-color:$white;  
+            a h4{
+                color:$dark;
+                &:hover{
+                    color:$primary;
+                }
+            }  
+            a.readmore{ 
+                color:$primary;
+                img{
+                    filter: brightness(0) saturate(100%) invert(41%) sepia(62%) saturate(2646%) hue-rotate(157deg) brightness(96%) contrast(99%);
+                }  
+                &:hover{
+                    color:$dark;
+                    img{
+                        filter: brightness(0) saturate(100%) invert(0%) sepia(6%) saturate(7500%) hue-rotate(276deg) brightness(93%) contrast(107%);
+                    }
+                }
+            }  
+            .meta{
+                .posted-on{
+                    color:$primary;
+                }
+            }                       
+        }   
+    }
+} 
+
+ .filter-wrap {
+        h4{
+            color:$dark;
+        }
+        span{                     
+            background:$primary;           
+            color:$white;                       
+        }
+        ul {
+            li {               
+                &:hover {
+                    background:$primary;
+                    color:$white;
+                }
+                &.active{
+                    background:$primary;
+                    color:$white;
+                    @media(max-width:767px) {            
+                        background:transparent; 
+                        color:$primary;
+                    }
+                }
+            }
+        }        
+        
+    }    
+
+
+.related-post{
+    .blog {
+        .blog-inner-wrap{                                                
+            .blog-details{
+                background-color:$white;          
+                a{
+                    &:hover{
+                        color:$dark;
+                    }
+                }                                                                                  
+            }
+        }       
+    }
+} 
+
+.content-topic-section, .content-type-section{
+    .infobox-warp {        
+        .info-box{           
+            a.readmore{ 
+                color:$primary;
+                img{
+                    filter: brightness(0) saturate(100%) invert(41%) sepia(62%) saturate(2646%) hue-rotate(157deg) brightness(96%) contrast(99%);
+                }  
+                &:hover{
+                    color:$dark;
+                    img{
+                        filter: brightness(0) saturate(100%) invert(0%) sepia(6%) saturate(7500%) hue-rotate(276deg) brightness(93%) contrast(107%);
+                    }
+                }
+            }                                    
+        }
+    }
+}

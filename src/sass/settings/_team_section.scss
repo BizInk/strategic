@@ -1,0 +1,105 @@
+.team-section {  
+    .team-wrap {
+             
+        .team-member {
+      
+            .team-member-wrap{
+                box-shadow: 1px 1px 5px 0px rgba($dark, 0.20);
+                background:$white;        
+                &:hover{
+                    .member-details{
+                     background-color:$primary;
+                        h3{
+                            color:$white;
+                        }   
+                        h6{
+                            color:$white;                        
+                        }  
+                        ul.social-nav {
+                            li { 
+                                a{
+                                    color:$white;                                   
+                                }
+                            }
+                        }    
+                    }
+                }
+                .member-full-details{
+                    background-color:$primary; 
+                    color:$white;
+                }
+                .member-details{
+                    h3{
+                    }   
+                    h6{
+                    }              
+                    ul.social-nav {
+                        li { 
+                            a{
+                                color:$primary;
+                                &:hover{
+                                  color:$dark;
+                                }
+                            }
+                        }
+                    }                    
+                }
+            }
+            &:last-child{
+            }
+        }       
+    }
+}
+
+.location-wrap{
+    color:$white;
+    h2{
+        color:$white;
+    }
+    ul{
+        li {       
+            i {
+                color:$white;
+            }
+            a {
+                color:$white;
+                &:hover{
+                    color:$dark;
+                }
+            }
+            &:hover{
+               color:$dark;
+               i{
+                  color:$dark;
+               }
+            }
+        }        
+    }
+}
+.contact-info-flexible{
+    .location-wrap{
+        color:$dark;
+        h2{
+            color:$dark;
+        }
+        ul{
+            li {       
+                i {
+                    color:$primary;
+                }
+                a {
+                    color:$dark;
+                    &:hover{
+                        color:$primary;
+                    }
+                }
+                &:hover{
+                   color:$primary;
+                   i{
+                      color:$primary;
+                   }
+                }
+            }        
+        }
+    }
+}

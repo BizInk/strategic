@@ -1,0 +1,14 @@
+.two-col-section { 
+  .col-left {
+    display: flex;
+    align-items: center;
+
+    .col-content {
+      max-width: 543px;
+
+      @include media-breakpoint-down(md) {
+        text-align: center;
+      }
+    }
+  }  
+}

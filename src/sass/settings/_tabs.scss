@@ -1,0 +1,26 @@
+.responsive-tabs {
+  .nav-tabs {
+    .nav-link {
+      color: $dark;
+    }
+  }
+  .card-header {
+    background-color: $primary;
+    a {
+      color: $white;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .nav-tabs {
+      .nav-item {
+        .nav-link {
+          &.active {
+            color: $primary;
+            border-bottom: 2px solid $primary;
+          }
+        }
+      }
+    }
+  }
+}

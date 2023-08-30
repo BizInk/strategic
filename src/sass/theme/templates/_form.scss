@@ -1,0 +1,123 @@
+// gravity form button
+input[type="submit"] {
+    border: 0;
+    padding: 1.4rem 7.2rem;
+    font-size:1.8rem;
+    border-radius: 0.3rem;
+    font-weight: 600; 
+    width: 100%;
+  }
+
+ 
+  // gravity form input
+.gform_wrapper.gravity-theme form {  
+  input[type=text],  input[type=email], input[type=password] {
+    border-radius: 0.3rem;    
+    width:100%;
+  }
+
+}
+
+.gform_wrapper.gravity-theme form input[type=email], .gform_wrapper.gravity-theme form input[type=password] {
+  padding: 0.8rem 5rem;
+}
+
+.ginput_container_email, .password_input_container{
+  position: relative;
+  
+  &:before {
+    position: absolute;
+    content: '\f003';
+    font-family: 'fontawesome';
+    top: 10px;
+    left: 15px;
+  }
+}
+
+.password_input_container{
+  position: relative;
+  
+  &:before {      
+      content: '\f023';      
+  }
+}
+
+// checkbox design
+.gchoice.gchoice_2_7_1 {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.gchoice.gchoice_2_7_1 input[type="checkbox"] {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.gchoice.gchoice_2_7_1 label {
+  position: relative;
+  cursor: pointer;
+}
+
+.gchoice.gchoice_2_7_1 label:before {
+  content: '';
+  -webkit-appearance: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 100%;
+}
+
+.gchoice.gchoice_2_7_1 input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border-width: 0 2px 2px 0 !important;
+  transform: rotate(45deg);
+}
+
+
+.gfield.gfield_html.gfield_html_formatted.gfield_no_follows_desc.field_sublabel_below.field_description_below {
+  color: $white;
+  font-size: 1.4rem;
+  a{
+    color:$white;
+  }
+}
+
+.gform_wrapper.gform_validation_error .gform_validation_errors{
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  h2{
+    color:rgba($white, 0.5);    
+  }
+}
+.gform_wrapper.gform_validation_error .gfield_validation_message, .gform_wrapper.gform_validation_error .validation_message{
+  background-color: transparent;
+  padding: 5px !important;
+  border: none;
+  margin: 0;
+  color:rgba($white, 0.5);
+}
+
+.gform_confirmation_wrapper .gform_confirmation_message{
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: $white;
+  @include media-breakpoint-down(lg){
+    font-size: 1.8rem;
+  }
+}

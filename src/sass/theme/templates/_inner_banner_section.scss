@@ -1,0 +1,6 @@
+.inner-banner-section{
+    @include background-set(center, cover, no-repeat);
+    h1{
+        font-weight:700;
+    }
+  }

@@ -1,0 +1,40 @@
+.btn {
+  &.btn-outline-navyblue {
+    color: $primary;
+    border-color: $primary;
+    border:1px solid $primary;  
+    &:hover{
+      background-color: $dark;
+      color:$white;      
+      border-color:$dark;  
+    }
+  }
+}
+
+.navyblue-btn, .btn-primary, .button, .topics-load-more {
+  background-color:$primary;
+  color: $white;
+  &:hover {
+    background-color: $dark;
+    color: $white;
+  }
+}
+
+.dark-btn {
+  background-color: $dark;
+  color: $white;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
+.white-btn {
+  background-color:$white;
+  color: $primary;
+  &:hover {
+    background-color: $dark;
+    color: $white;
+  }
+}
+

@@ -1,0 +1,15 @@
+.page-not-found {
+  display:flex;
+  align-items:center;  
+  padding: 70px 0;
+  h1{
+   font-weight:$font-weight-bold;
+  }
+  h2{
+    font-weight:$font-weight-semibold;
+    margin-bottom:0;
+  }  
+  .btn-sm{
+    padding: 12px 33px;
+  }
+}

@@ -1,0 +1,13 @@
+.request-quote-section {
+    padding: 8rem 0;
+    @include media-breakpoint-down(lg){
+      padding: 4rem 0;
+    }
+    form {
+      max-width: 470px;
+      margin: 0 auto;
+    @include media-breakpoint-down(lg){
+      margin-top:3rem;
+    }
+  }
+}

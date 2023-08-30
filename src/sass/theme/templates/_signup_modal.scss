@@ -1,0 +1,36 @@
+.signup_modal{
+  .form-wrap {
+    max-width: 450px;
+    margin-left: auto;  
+    padding: 38px 50px;
+    border:0;
+    @include media-breakpoint-down(lg){
+      margin: 30px auto 0;
+      padding: 38px 20px;
+    }
+
+    .modal-header {
+      border: 0;padding: 0;
+      .btn-close {
+          border: 0;          
+          padding: 0;
+          height: 24px;
+          width: 24px;
+          line-height: 20px;
+          border-radius: 100%;
+          font-size: 29px;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          opacity:1;
+      }
+    }
+
+    h2{
+      margin-bottom:40px;      
+    }    
+    .gform_wrapper.gravity-theme .gfield input, .gform_wrapper.gravity-theme .gfield select{
+      border: none;
+    }  
+  }
+}

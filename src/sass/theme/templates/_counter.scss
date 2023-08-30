@@ -1,0 +1,25 @@
+.counter-section { 
+  .full-width-wysiwyg {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .counter-wrap {
+    text-align: center;   
+    @include aligncontent(row, center, center);   
+    
+    h2{
+      margin-bottom:0;   
+      font-weight:$font-weight-semibold;  
+    }
+
+    span {
+      font-size: 6rem;
+      line-height: 1.2;    
+      font-weight:$font-weight-semibold;  
+      @include media-breakpoint-down(lg){
+        font-size:4rem;
+        line-height:4rem;
+      }
+    }
+  }  
+}

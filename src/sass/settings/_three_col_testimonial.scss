@@ -1,0 +1,18 @@
+.user-avtar {
+  background-color:$light-grey;
+}
+
+.testimonial-left-content{
+  h3{
+    color:$dark;
+  }
+}
+
+.testimonial-card {  
+  .testimonial-card-inner {
+    background: $white;
+    .testimonial-header {
+      border-bottom: 1px solid $light-grey;
+    }
+  }
+}

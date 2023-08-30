@@ -1,0 +1,67 @@
+.no-results{    
+    .page-header{
+        h1{
+            color:$primary;           
+        }
+    }
+    .search-form{        
+        .input-group{                    
+            .submit{              
+                color: $white;                
+                background-color:$primary;                
+                &:hover, &:focus{
+                    background-color: $dark;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+}
+
+.search-results{
+    .page-header{
+        .page-title{
+            color: $neutral-blue;
+        }
+    }
+    h2.entry-title{              
+        a{
+            color: $primary;        
+            &:hover, &:focus{
+                color: $neutral-blue;
+            }
+        }       
+    }
+    article{        
+        border-bottom: 1px solid $dark;
+        .btn{           
+            background-color:$dark;
+            color:$white;
+            border:1px solid $dark;           
+            &:hover {              
+              border:1px solid $primary;            
+              background-color:$primary;
+            }
+        }
+        a:not(.btn){
+            color: $dark;           
+            &:hover, &:focus{
+                color: $primary;                
+            }
+        }       
+    }
+    .page-item.active .page-link {        
+        color:$white;
+        background-color:$dark;
+        border-color:$dark;
+    }
+    .page-link{
+        color:$dark;
+        &:hover{
+            background-color:$dark;
+            border-color:$dark;
+            color:$white;
+        }
+    }    
+}

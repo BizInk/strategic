@@ -1,0 +1,13 @@
+.about-you-section {  
+    .team-wrap {              
+        .team-member {       
+            &:after{
+                border-color:$primary;
+            }
+            .team-member-wrap{                
+                .member-img {                                                    
+                }                
+            }            
+        }       
+    }
+}

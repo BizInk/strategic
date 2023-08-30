@@ -1,0 +1,59 @@
+.full-width-wysiwyg{   
+    .editor-design {
+        h5{
+            color:$primary;
+        }
+		a:not(.btn){		
+            color:$dark;    
+            &:hover{
+                color:$primary;
+            }        	
+        }
+        a.button{
+            color:$white;
+            &:hover{
+                color:$white;
+            }
+        }
+    }
+}  
+
+%ul-listing{   
+    li {        
+        &:before {            
+            color: $neutral-blue;
+        }
+    }
+}
+
+%blockquote{
+    color: $dark;   
+    border-left: 4px solid $dark;       
+}
+
+.default-content{	
+	ul{
+		@extend %ul-listing;
+	}
+	ol{
+        @extend %ol-listing;
+	}
+	a:not(.btn){
+		color:$primary;        
+		&:hover{
+			color:$neutral-blue;
+		}
+	}
+    a.button{
+        color:$white;
+        &:hover{
+            color:$white;
+        }
+    }
+	blockquote{
+        @extend %blockquote;
+	}       
+	h1, h2, h3, h4, h5{
+		color: $dark;	  	
+	}	
+}

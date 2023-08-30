@@ -1,0 +1,15 @@
+.two-col-slider {
+    .slide {
+        .child-element {
+            &:before {
+                background-color:rgba($dark, 0.60);
+            }
+        }
+    }
+    .slick-next, .slick-prev {   
+      border-color:$primary;   
+    }
+    .slick-next:before, .slick-prev:before{
+        color:$primary;
+    }
+}

@@ -1,0 +1,18 @@
+.accordion-section{
+    .accordion{
+        .accordion-item{          
+            .accordion-header{              
+                .accordion-button{                  
+                    background-color: $primary;
+                    color: $white;                   
+                    &:after{                       
+                        color: $white;                      
+                    }                    
+                }
+            }
+            .accordion-body{               
+                background-color:$light-blue;
+            }
+        }
+    }
+}

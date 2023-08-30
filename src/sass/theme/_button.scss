@@ -1,0 +1,21 @@
+.btn, .button, .btn-secondary{
+  padding: 14px 70px;
+  font-size: 2rem;
+  border-radius: 3px;
+  font-weight: $font-weight-semibold;
+  display:inline-block;
+  @include transition(all 0.3s ease-in-out);
+  @include media-breakpoint-down(md) {
+    padding: 10px 55px;
+    font-size: 2rem;
+  }
+}
+
+.btn-sm{
+  padding: 8px 30px;
+  font-size:1.4rem;  
+}
+
+button:focus {
+  box-shadow: none !important;
+}

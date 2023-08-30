@@ -1,0 +1,37 @@
+
+.full-width-section{
+  .full-width-wysiwyg{
+    position: relative; 
+    margin-bottom:60px;  
+    @include media-breakpoint-down(md){
+        margin-bottom:40px;          
+    }   
+    .editor-design{        
+      max-width:1040px;
+      margin:0 auto 30px;    
+      a:not(.btn){		
+        text-decoration: none;		
+      }  
+      .post-meta span {
+        padding: 0 7px;
+      }   
+      &.text-left{
+        text-align: left;
+        margin-left: unset;
+      }
+      &.text-right{
+        text-align: right;
+        margin-right: unset;
+      }
+    }
+    iframe {
+      width: 100%;
+      height: 450px;
+      display:block;
+    }
+  }
+} 
+
+.two-col-section + .full-width-section {
+  margin-top: 0;
+}

@@ -1,0 +1,32 @@
+
+.info-box {
+  
+}
+
+
+.resource-infobox  {
+  .infobox-warp {
+    .row {
+      .info-box {  
+        &:hover{
+          h6,p{
+            color:$primary;
+          }
+        }      
+         color:$dark;
+        .service-icon-wrap {
+          background-color:$primary;          
+        }        
+        .info-description {
+          
+          p{
+          
+          }
+        }
+        h4 {
+          
+        }
+      }
+    }
+  }  
+}

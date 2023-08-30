@@ -1,0 +1,73 @@
+.call-to-action-section { 
+    .full-width-wysiwyg {
+      .editor-design {
+        color:$white;
+        h1,p{
+          color:$white;
+        }
+      }      
+    }
+  }
+  
+  .inner-banner-section{
+    &.overlay{
+      &:before{
+        background-color:rgba($dark, 0.30);
+        }
+      }
+  }
+  
+
+  
+.help-section{
+  .editor-design h2 {
+    color:$white;
+  }
+  .dropdown-full-wrap{  
+    .dropdown-single-wrap{           
+      h3{     
+        &.green{
+          color:$white;
+        } 
+        &.purple{
+          color:$white;
+        }
+      }
+      .dropdown{
+        button {        
+          background: transparent;                        
+          &.orange{
+            color:$light-blue;
+          } 
+          &.yellow{ 
+            color:$light-blue;
+          }        
+        }  
+        .dropdown-menu {        
+          box-shadow: 1px 1px 8px rgba($dark,0.2);
+          
+          .dropdown-item.active, .dropdown-item:active {
+            background: transparent;
+          }    
+          .dropdown-item:hover {
+           background-color:transparent;
+          }     
+        }      
+      }
+    }
+    .orange{
+      .dropdown-menu {               
+        .dropdown-item:hover {
+          color:$primary;
+        }
+      }    
+    }
+    .yellow{
+      .dropdown-menu {               
+        .dropdown-item:hover {
+          color:$primary;
+        }
+      }    
+    }
+  }
+}

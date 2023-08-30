@@ -1,0 +1,106 @@
+.tab-section {
+  padding: 80px 0;
+
+  @include media-breakpoint-down(lg) {
+    padding:40px 0;
+  }
+}
+
+.responsive-tabs {
+  padding: 1rem;
+
+  .nav-tabs {
+    display: none;
+
+    .nav-link {
+      font-size: 1.4rem;
+      font-weight: $font-weight-semibold;
+    }
+  }
+
+  .card-header {
+    border-bottom: 0;
+
+    a {
+      font-size: 1.4rem;
+      font-weight: $font-weight-semibold;
+      color: $white;
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+      @include aligncontent(row, space-between, center);
+
+      i {
+        @include transition(all 0.4s ease-in-out);
+        font-size: 20px;
+      }
+
+      &[aria-expanded="true"] {
+              
+        i {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .card-body {
+    font-size: 16px;
+    padding: 25px 0;
+    line-height: 28px;
+  }
+
+
+  @include media-breakpoint-up(lg) {
+    .nav-tabs {
+      @include aligncontent(row, space-between, center);
+      flex-wrap: nowrap;
+
+      .nav-item {
+        width: 100%;
+
+        .nav-link {
+          display: inline-block;
+          padding: 10px 20px;
+          cursor: pointer;
+          width: 100%;
+          text-align: center;
+          @include transition(0s);
+
+
+          &:hover {
+            border: 0;
+          }
+
+          &.active {
+            border: 0;          
+          }
+        }
+      }
+    }
+
+    .card {
+      border: none;
+
+      .card-header {
+        display: none;
+      }
+
+      .collapse {
+        display: block;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .tab-pane {
+      display: block !important;
+      opacity: 1;
+    }
+    .card-body {
+      font-size: 14px;
+      line-height:2.5rem;
+      padding:1.5rem;
+    }
+  }
+}

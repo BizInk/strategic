@@ -1,0 +1,47 @@
+/*Mixin START*/
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;  
+       -moz-transition: $transition;   
+            transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+}
+
+@mixin border-radius($radius) {    
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+         -o-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin shadow($shadow) {
+    -webkit-box-shadow: $shadow; 
+       -moz-box-shadow: $shadow; 
+        -ms-box-shadow: $shadow; 
+         -o-box-shadow: $shadow;  
+            box-shadow: $shadow;  
+}
+
+@mixin aligncontent($direction, $justify, $align) {
+   display: flex;
+   flex-direction: $direction;
+   justify-content: $justify;
+   align-items: $align;
+}
+
+@mixin background-set($position, $size, $repeat) {
+   background-position: $position;
+   background-size: $size;
+   background-repeat: $repeat;
+}
+
+
+
+/*Mixin END*/

@@ -1,0 +1,52 @@
+@import "assets/bootstrap5/bootstrap";                             // <------- Loads Bootstrap4
+@import "assets/understrap/theme/understrap";  // <------- Loads the Understrap defaults. Just a few classes to incorporate BS in WP
+@import "assets/understrap/theme/woocommerce"; // <------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
+
+// Optional files - If you don´t use the corresponding scripts/fonts comment em out
+@import "assets/fontawesome/font-awesome";                           // <------- Font Awesome Icon font
+@import "assets/underscores";                            // <------- Underscores media styles
+
+// Any additional imported files //
+@import "assets/understrap/theme/colors";           // <-------- This creates the necessary bootstrap color classes.
+@import "assets/understrap/theme/blocks";           // <-------- This adds Bootstrap styles to blocks.
+@import "assets/understrap/theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
+
+@import "assets/slick/slick-theme";
+@import "assets/slick/slick";
+
+
+@import "theme/child_theme_variables";
+@import "theme/mixin";
+@import "theme/fonts";
+@import "theme/common";
+@import "theme/typography";
+@import "theme/button";
+@import "theme/header";
+@import "theme/footer";
+@import "theme/page_not-found";
+@import "theme/single_post";
+@import "theme/search";
+
+
+// Templates
+@import "theme/templates/banner";
+@import "theme/templates/two_columns";
+@import "theme/templates/infobox";
+@import "theme/templates/tabs";
+@import "theme/templates/counter";
+@import "theme/templates/logo_slider";
+@import "theme/templates/_call_to_action";
+@import "theme/templates/three_col_testimonial";
+@import "theme/templates/full_width_section";
+@import "theme/templates/pricing_section";
+@import "theme/templates/request_quote";
+@import "theme/templates/signup";
+@import "theme/templates/form";
+@import "theme/templates/team_section";
+@import "theme/templates/latest_blog_section";
+@import "theme/templates/signup_modal";
+@import "theme/templates/inner_banner_section";
+@import "theme/templates/full_width_wysiwyg";
+@import "theme/templates/testimonial";
+@import "theme/templates/accordion";
+@import "theme/templates/blog_list";
