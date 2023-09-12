@@ -54,8 +54,12 @@ if( is_search() ){
 
 // If archive page
 if( is_archive() ){
+	//$banner_title = get_queried_object()->name;
+	$banner_title = single_cat_title( '', false );
+    if(empty($banner_title) && is_post_type_archive()){
+        $banner_title = post_type_archive_title( '', false );
+    }
 
-	$banner_title = get_queried_object()->name;
 	$banner_subtitle = '';
 } ?>
 

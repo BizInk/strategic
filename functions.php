@@ -268,20 +268,20 @@ function wpdocs_custom_init() {
 
 	// Fixed Price Packages CPT
 	$fixed_price_packages_labels = array(
-		'name'                  => _x( 'Fixed Price Packages', 'Post type general name', 'luca' ),
-		'singular_name'         => _x( 'Fixed Price Package', 'Post type singular name', 'luca' ),
-		'menu_name'             => _x( 'Fixed Price Packages', 'Admin Menu text', 'luca' ),
-		'name_admin_bar'        => _x( 'Fixed Price Package', 'Add New on Toolbar', 'luca' ),
-		'add_new'               => __( 'Add New', 'luca' ),
-		'add_new_item'          => __( 'Add New Fixed Price Package', 'luca' ),
-		'new_item'              => __( 'New Fixed Price Package', 'luca' ),
-		'edit_item'             => __( 'Edit Fixed Price Package', 'luca' ),
-		'view_item'             => __( 'View Fixed Price Package', 'luca' ),
-		'all_items'             => __( 'All Fixed Price Packages', 'luca' ),
-		'search_items'          => __( 'Search Fixed Price Packages', 'luca' ),
-		'parent_item_colon'     => __( 'Parent Fixed Price Packages:', 'luca' ),
-		'not_found'             => __( 'No fixed price packages found.', 'luca' ),
-		'not_found_in_trash'    => __( 'No fixed price packages found in Trash.', 'luca' ),
+		'name'                  => _x( 'Fixed Price Packages', 'Post type general name', 'strategic' ),
+		'singular_name'         => _x( 'Fixed Price Package', 'Post type singular name', 'strategic' ),
+		'menu_name'             => _x( 'Fixed Price Packages', 'Admin Menu text', 'strategic' ),
+		'name_admin_bar'        => _x( 'Fixed Price Package', 'Add New on Toolbar', 'strategic' ),
+		'add_new'               => __( 'Add New', 'strategic' ),
+		'add_new_item'          => __( 'Add New Fixed Price Package', 'strategic' ),
+		'new_item'              => __( 'New Fixed Price Package', 'strategic' ),
+		'edit_item'             => __( 'Edit Fixed Price Package', 'strategic' ),
+		'view_item'             => __( 'View Fixed Price Package', 'strategic' ),
+		'all_items'             => __( 'All Fixed Price Packages', 'strategic' ),
+		'search_items'          => __( 'Search Fixed Price Packages', 'strategic' ),
+		'parent_item_colon'     => __( 'Parent Fixed Price Packages:', 'strategic' ),
+		'not_found'             => __( 'No fixed price packages found.', 'strategic' ),
+		'not_found_in_trash'    => __( 'No fixed price packages found in Trash.', 'strategic' ),
 	);
 
 	$fixed_price_packages_args = array(
@@ -304,20 +304,20 @@ function wpdocs_custom_init() {
 
 	// Testimonials CPT
 	$testimonials_labels = array(
-		'name'                  => _x( 'Testimonials', 'Post type general name', 'luca' ),
-		'singular_name'         => _x( 'Testimonial', 'Post type singular name', 'luca' ),
-		'menu_name'             => _x( 'Testimonials', 'Admin Menu text', 'luca' ),
-		'name_admin_bar'        => _x( 'Testimonials', 'Add New on Toolbar', 'luca' ),
-		'add_new'               => __( 'Add New', 'luca' ),
-		'add_new_item'          => __( 'Add New Testimonial', 'luca' ),
-		'new_item'              => __( 'New Testimonial', 'luca' ),
-		'edit_item'             => __( 'Edit Testimonial', 'luca' ),
-		'view_item'             => __( 'View Testimonial', 'luca' ),
-		'all_items'             => __( 'All Testimonials', 'luca' ),
-		'search_items'          => __( 'Search Testimonials', 'luca' ),
-		'parent_item_colon'     => __( 'Parent Testimonial:', 'luca' ),
-		'not_found'             => __( 'No testimonials found.', 'luca' ),
-		'not_found_in_trash'    => __( 'No testimonials found in Trash.', 'luca' ),
+		'name'                  => _x( 'Testimonials', 'Post type general name', 'strategic' ),
+		'singular_name'         => _x( 'Testimonial', 'Post type singular name', 'strategic' ),
+		'menu_name'             => _x( 'Testimonials', 'Admin Menu text', 'strategic' ),
+		'name_admin_bar'        => _x( 'Testimonials', 'Add New on Toolbar', 'strategic' ),
+		'add_new'               => __( 'Add New', 'strategic' ),
+		'add_new_item'          => __( 'Add New Testimonial', 'strategic' ),
+		'new_item'              => __( 'New Testimonial', 'strategic' ),
+		'edit_item'             => __( 'Edit Testimonial', 'strategic' ),
+		'view_item'             => __( 'View Testimonial', 'strategic' ),
+		'all_items'             => __( 'All Testimonials', 'strategic' ),
+		'search_items'          => __( 'Search Testimonials', 'strategic' ),
+		'parent_item_colon'     => __( 'Parent Testimonial:', 'strategic' ),
+		'not_found'             => __( 'No testimonials found.', 'strategic' ),
+		'not_found_in_trash'    => __( 'No testimonials found in Trash.', 'strategic' ),
 	);
 
 	$testimonials_args = array(
@@ -340,20 +340,20 @@ function wpdocs_custom_init() {
 
 	// Team Members CPT
 	$team_members_labels = array(
-		'name'                  => _x( 'Team Members', 'Post type general name', 'luca' ),
-		'singular_name'         => _x( 'Team Member', 'Post type singular name', 'luca' ),
-		'menu_name'             => _x( 'Team Members', 'Admin Menu text', 'luca' ),
-		'name_admin_bar'        => _x( 'Team Members', 'Add New on Toolbar', 'luca' ),
-		'add_new'               => __( 'Add New', 'luca' ),
-		'add_new_item'          => __( 'Add New Team Member', 'luca' ),
-		'new_item'              => __( 'New Team Member', 'luca' ),
-		'edit_item'             => __( 'Edit Team Member', 'luca' ),
-		'view_item'             => __( 'View Team Member', 'luca' ),
-		'all_items'             => __( 'All Team Members', 'luca' ),
-		'search_items'          => __( 'Search Team Members', 'luca' ),
-		'parent_item_colon'     => __( 'Parent Team Member:', 'luca' ),
-		'not_found'             => __( 'No team Members found.', 'luca' ),
-		'not_found_in_trash'    => __( 'No team Members found in Trash.', 'luca' ),
+		'name'                  => _x( 'Team Members', 'Post type general name', 'strategic' ),
+		'singular_name'         => _x( 'Team Member', 'Post type singular name', 'strategic' ),
+		'menu_name'             => _x( 'Team Members', 'Admin Menu text', 'strategic' ),
+		'name_admin_bar'        => _x( 'Team Members', 'Add New on Toolbar', 'strategic' ),
+		'add_new'               => __( 'Add New', 'strategic' ),
+		'add_new_item'          => __( 'Add New Team Member', 'strategic' ),
+		'new_item'              => __( 'New Team Member', 'strategic' ),
+		'edit_item'             => __( 'Edit Team Member', 'strategic' ),
+		'view_item'             => __( 'View Team Member', 'strategic' ),
+		'all_items'             => __( 'All Team Members', 'strategic' ),
+		'search_items'          => __( 'Search Team Members', 'strategic' ),
+		'parent_item_colon'     => __( 'Parent Team Member:', 'strategic' ),
+		'not_found'             => __( 'No team Members found.', 'strategic' ),
+		'not_found_in_trash'    => __( 'No team Members found in Trash.', 'strategic' ),
 	);
 
 	$team_members_args = array(
@@ -374,22 +374,180 @@ function wpdocs_custom_init() {
 
 	register_post_type( 'team-member', $team_members_args );
 
+	/**
+	 * Post Type: Weekly Digests
+	 */
+	$labels = array(
+		'name'                  => _x( 'Weekly Digests', 'Weekly Digest General Name', 'strategic' ),
+		'singular_name'         => _x( 'Weekly Digest', 'Weekly Digest Singular Name', 'strategic' ),
+		'menu_name'             => __( 'Weekly Digests', 'strategic' ),
+		'name_admin_bar'        => __( 'Weekly Digest', 'strategic' ),
+		'archives'              => __( 'Weekly Digest Archives', 'strategic' ),
+		'attributes'            => __( 'Digest Attributes', 'strategic' ),
+		'parent_item_colon'     => __( 'Parent Digest:', 'strategic' ),
+		'all_items'             => __( 'All Digests', 'strategic' ),
+		'add_new_item'          => __( 'Add New Weekly Digest', 'strategic' ),
+		'add_new'               => __( 'Add New', 'strategic' ),
+		'new_item'              => __( 'New Digest', 'strategic' ),
+		'edit_item'             => __( 'Edit Digest', 'strategic' ),
+		'update_item'           => __( 'Update Digest', 'strategic' ),
+		'view_item'             => __( 'View Weekly Digest', 'strategic' ),
+		'view_items'            => __( 'View Weekly Digests', 'strategic' ),
+		'search_items'          => __( 'Search Weekly Digest', 'strategic' ),
+		'not_found'             => __( 'Not found', 'strategic' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'strategic' ),
+		'featured_image'        => __( 'Featured Image', 'strategic' ),
+		'set_featured_image'    => __( 'Set featured image', 'strategic' ),
+		'remove_featured_image' => __( 'Remove featured image', 'strategic' ),
+		'use_featured_image'    => __( 'Use as featured image', 'strategic' ),
+		'insert_into_item'      => __( 'Insert into Digest', 'strategic' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'strategic' ),
+		'items_list'            => __( 'Weekly Digests list', 'strategic' ),
+		'items_list_navigation' => __( 'Digests list navigation', 'strategic' ),
+		'filter_items_list'     => __( 'Filter Digests list', 'strategic' ),
+	);
+	$args = array(
+		'label'                 => __( 'Weekly Digest', 'strategic' ),
+		'description'           => __( 'Weekly Digests', 'strategic' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions', 'post-formats' ),
+		'taxonomies'            => array(),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 25,
+		'menu_icon'             => 'dashicons-book-alt',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+		'show_in_rest'          => true,
+		'rest_base'             => 'weekly_digests',
+	);
+	register_post_type( 'weekly-digest', $args );
+
+	$labels = array(
+		'name'                       => _x( 'Topics', 'Topics General Name', 'strategic' ),
+		'singular_name'              => _x( 'Topic', 'Topic Singular Name', 'strategic' ),
+		'menu_name'                  => __( 'Topic', 'strategic' ),
+		'all_items'                  => __( 'All Topics', 'strategic' ),
+		'parent_item'                => __( 'Parent Topic', 'strategic' ),
+		'parent_item_colon'          => __( 'Parent Topic:', 'strategic' ),
+		'new_item_name'              => __( 'New Topic Name', 'strategic' ),
+		'add_new_item'               => __( 'Add New Topic', 'strategic' ),
+		'edit_item'                  => __( 'Edit Topic', 'strategic' ),
+		'update_item'                => __( 'Update Topic', 'strategic' ),
+		'view_item'                  => __( 'View Topic', 'strategic' ),
+		'separate_items_with_commas' => __( 'Separate Topics with commas', 'strategic' ),
+		'add_or_remove_items'        => __( 'Add or remove Topics', 'strategic' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'strategic' ),
+		'popular_items'              => __( 'Popular Topics', 'strategic' ),
+		'search_items'               => __( 'Search Topics', 'strategic' ),
+		'not_found'                  => __( 'Not Found', 'strategic' ),
+		'no_terms'                   => __( 'No Topics', 'strategic' ),
+		'items_list'                 => __( 'Topics list', 'strategic' ),
+		'items_list_navigation'      => __( 'Topics list navigation', 'strategic' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => false,
+		'show_in_rest'               => true,
+	);
+	register_taxonomy( 'weekly-digest-topic', array( 'weekly-digest' ), $args );
+
+	$labels = array(
+		'name'                       => _x( 'Types', 'Types General Name', 'strategic' ),
+		'singular_name'              => _x( 'Type Singular Name', 'Type', 'strategic' ),
+		'menu_name'                  => __( 'Type', 'strategic' ),
+		'all_items'                  => __( 'All Types', 'strategic' ),
+		'parent_item'                => __( 'Parent Type', 'strategic' ),
+		'parent_item_colon'          => __( 'Parent Type:', 'strategic' ),
+		'new_item_name'              => __( 'New Type Name', 'strategic' ),
+		'add_new_item'               => __( 'Add New Type', 'strategic' ),
+		'edit_item'                  => __( 'Edit Type', 'strategic' ),
+		'update_item'                => __( 'Update Type', 'strategic' ),
+		'view_item'                  => __( 'View Type', 'strategic' ),
+		'separate_items_with_commas' => __( 'Separate Types with commas', 'strategic' ),
+		'add_or_remove_items'        => __( 'Add or remove Types', 'strategic' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'strategic' ),
+		'popular_items'              => __( 'Popular Types', 'strategic' ),
+		'search_items'               => __( 'Search Types', 'strategic' ),
+		'not_found'                  => __( 'Not Found', 'strategic' ),
+		'no_terms'                   => __( 'No Types', 'strategic' ),
+		'items_list'                 => __( 'Types list', 'strategic' ),
+		'items_list_navigation'      => __( 'Types list navigation', 'strategic' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => false,
+		'show_in_rest'               => true,
+	);
+	register_taxonomy( 'weekly-digest-type', array( 'weekly-digest' ), $args );
+
+	$labels = array(
+		'name'                       => _x( 'Regions', 'Regions', 'strategic' ),
+		'singular_name'              => _x( 'Region', 'Region', 'strategic' ),
+		'menu_name'                  => __( 'Region', 'strategic' ),
+		'all_items'                  => __( 'All Regions', 'strategic' ),
+		'parent_item'                => __( 'Parent Region', 'strategic' ),
+		'parent_item_colon'          => __( 'Parent Region:', 'strategic' ),
+		'new_item_name'              => __( 'New Region Name', 'strategic' ),
+		'add_new_item'               => __( 'Add New Region', 'strategic' ),
+		'edit_item'                  => __( 'Edit Region', 'strategic' ),
+		'update_item'                => __( 'Update Region', 'strategic' ),
+		'view_item'                  => __( 'View Region', 'strategic' ),
+		'separate_items_with_commas' => __( 'Separate Regions with commas', 'strategic' ),
+		'add_or_remove_items'        => __( 'Add or remove Regions', 'strategic' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'strategic' ),
+		'popular_items'              => __( 'Popular Regions', 'strategic' ),
+		'search_items'               => __( 'Search Regions', 'strategic' ),
+		'not_found'                  => __( 'Not Found', 'strategic' ),
+		'no_terms'                   => __( 'No Regions', 'strategic' ),
+		'items_list'                 => __( 'Regions list', 'strategic' ),
+		'items_list_navigation'      => __( 'Regions list navigation', 'strategic' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => false,
+		'show_in_rest'               => true,
+	);
+	register_taxonomy( 'weekly-digest-region', array( 'weekly-digest' ), $args );
+
 	// Mail Templates CPT
 	$mail_templates_labels = array(
-		'name'                  => _x( 'Mail Templates', 'Post type general name', 'luca' ),
-		'singular_name'         => _x( 'Mail Template', 'Post type singular name', 'luca' ),
-		'menu_name'             => _x( 'Mail Templates', 'Admin Menu text', 'luca' ),
-		'name_admin_bar'        => _x( 'Mail Templates', 'Add New on Toolbar', 'luca' ),
-		'add_new'               => __( 'Add New', 'luca' ),
-		'add_new_item'          => __( 'Add New Mail Template', 'luca' ),
-		'new_item'              => __( 'New Mail Template', 'luca' ),
-		'edit_item'             => __( 'Edit Mail Template', 'luca' ),
-		'view_item'             => __( 'View Mail Template', 'luca' ),
-		'all_items'             => __( 'All Mail Templates', 'luca' ),
-		'search_items'          => __( 'Search Mail Templates', 'luca' ),
-		'parent_item_colon'     => __( 'Parent Mail Template:', 'luca' ),
-		'not_found'             => __( 'No mail templates found.', 'luca' ),
-		'not_found_in_trash'    => __( 'No mail templates found in Trash.', 'luca' ),
+		'name'                  => _x( 'Mail Templates', 'Post type general name', 'strategic' ),
+		'singular_name'         => _x( 'Mail Template', 'Post type singular name', 'strategic' ),
+		'menu_name'             => _x( 'Mail Templates', 'Admin Menu text', 'strategic' ),
+		'name_admin_bar'        => _x( 'Mail Templates', 'Add New on Toolbar', 'strategic' ),
+		'add_new'               => __( 'Add New', 'strategic' ),
+		'add_new_item'          => __( 'Add New Mail Template', 'strategic' ),
+		'new_item'              => __( 'New Mail Template', 'strategic' ),
+		'edit_item'             => __( 'Edit Mail Template', 'strategic' ),
+		'view_item'             => __( 'View Mail Template', 'strategic' ),
+		'all_items'             => __( 'All Mail Templates', 'strategic' ),
+		'search_items'          => __( 'Search Mail Templates', 'strategic' ),
+		'parent_item_colon'     => __( 'Parent Mail Template:', 'strategic' ),
+		'not_found'             => __( 'No mail templates found.', 'strategic' ),
+		'not_found_in_trash'    => __( 'No mail templates found in Trash.', 'strategic' ),
 	);
 
 	$mail_templates_args = array(
@@ -412,20 +570,20 @@ function wpdocs_custom_init() {
 
 	// Checklists CPT
 	$checklist_labels = array(
-		'name'                  => _x( 'Checklists', 'Post type general name', 'luca' ),
-		'singular_name'         => _x( 'Checklist', 'Post type singular name', 'luca' ),
-		'menu_name'             => _x( 'Checklists', 'Admin Menu text', 'luca' ),
-		'name_admin_bar'        => _x( 'Checklists', 'Add New on Toolbar', 'luca' ),
-		'add_new'               => __( 'Add New', 'luca' ),
-		'add_new_item'          => __( 'Add New Checklist', 'luca' ),
-		'new_item'              => __( 'New Checklist', 'luca' ),
-		'edit_item'             => __( 'Edit Checklist', 'luca' ),
-		'view_item'             => __( 'View Checklist', 'luca' ),
-		'all_items'             => __( 'All Checklists', 'luca' ),
-		'search_items'          => __( 'Search Checklists', 'luca' ),
-		'parent_item_colon'     => __( 'Parent Checklist:', 'luca' ),
-		'not_found'             => __( 'No checklists found.', 'luca' ),
-		'not_found_in_trash'    => __( 'No checklists found in Trash.', 'luca' ),
+		'name'                  => _x( 'Checklists', 'Post type general name', 'strategic' ),
+		'singular_name'         => _x( 'Checklist', 'Post type singular name', 'strategic' ),
+		'menu_name'             => _x( 'Checklists', 'Admin Menu text', 'strategic' ),
+		'name_admin_bar'        => _x( 'Checklists', 'Add New on Toolbar', 'strategic' ),
+		'add_new'               => __( 'Add New', 'strategic' ),
+		'add_new_item'          => __( 'Add New Checklist', 'strategic' ),
+		'new_item'              => __( 'New Checklist', 'strategic' ),
+		'edit_item'             => __( 'Edit Checklist', 'strategic' ),
+		'view_item'             => __( 'View Checklist', 'strategic' ),
+		'all_items'             => __( 'All Checklists', 'strategic' ),
+		'search_items'          => __( 'Search Checklists', 'strategic' ),
+		'parent_item_colon'     => __( 'Parent Checklist:', 'strategic' ),
+		'not_found'             => __( 'No checklists found.', 'strategic' ),
+		'not_found_in_trash'    => __( 'No checklists found in Trash.', 'strategic' ),
 	);
 
 	$checklist_args = array(
@@ -448,20 +606,20 @@ function wpdocs_custom_init() {
 
 	// Landing Pages CPT
 	$landing_page_labels = array(
-		'name'                  => _x( 'Landing Pages', 'Post type general name', 'luca' ),
-		'singular_name'         => _x( 'Landing Page', 'Post type singular name', 'luca' ),
-		'menu_name'             => _x( 'Landing Pages', 'Admin Menu text', 'luca' ),
-		'name_admin_bar'        => _x( 'Landing Pages', 'Add New on Toolbar', 'luca' ),
-		'add_new'               => __( 'Add New', 'luca' ),
-		'add_new_item'          => __( 'Add New Landing Page', 'luca' ),
-		'new_item'              => __( 'New Landing Page', 'luca' ),
-		'edit_item'             => __( 'Edit Landing Page', 'luca' ),
-		'view_item'             => __( 'View Landing Page', 'luca' ),
-		'all_items'             => __( 'All Landing Pages', 'luca' ),
-		'search_items'          => __( 'Search Landing Pages', 'luca' ),
-		'parent_item_colon'     => __( 'Parent Landing Page:', 'luca' ),
-		'not_found'             => __( 'No landing pages found.', 'luca' ),
-		'not_found_in_trash'    => __( 'No landing pages found in Trash.', 'luca' ),
+		'name'                  => _x( 'Landing Pages', 'Post type general name', 'strategic' ),
+		'singular_name'         => _x( 'Landing Page', 'Post type singular name', 'strategic' ),
+		'menu_name'             => _x( 'Landing Pages', 'Admin Menu text', 'strategic' ),
+		'name_admin_bar'        => _x( 'Landing Pages', 'Add New on Toolbar', 'strategic' ),
+		'add_new'               => __( 'Add New', 'strategic' ),
+		'add_new_item'          => __( 'Add New Landing Page', 'strategic' ),
+		'new_item'              => __( 'New Landing Page', 'strategic' ),
+		'edit_item'             => __( 'Edit Landing Page', 'strategic' ),
+		'view_item'             => __( 'View Landing Page', 'strategic' ),
+		'all_items'             => __( 'All Landing Pages', 'strategic' ),
+		'search_items'          => __( 'Search Landing Pages', 'strategic' ),
+		'parent_item_colon'     => __( 'Parent Landing Page:', 'strategic' ),
+		'not_found'             => __( 'No landing pages found.', 'strategic' ),
+		'not_found_in_trash'    => __( 'No landing pages found in Trash.', 'strategic' ),
 	);
 
 	$landing_page_args = array(
@@ -791,6 +949,14 @@ function acf_load_dropdown2_values( $field ) {
 
     return $field;
 }
+
+require 'inc/acf.php';
+
+/** Force Showing of ACF Meta Boxes */
+function my_acf_init() {
+    acf_update_setting('remove_wp_meta_box', false);
+}
+add_action('acf/init', 'my_acf_init');
 
 // Theme Updater
 require 'plugin-update-checker/plugin-update-checker.php';
