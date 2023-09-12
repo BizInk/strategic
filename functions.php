@@ -879,7 +879,7 @@ if( function_exists('acf_add_options_page') ){
 		'page_title' => 'Admin Settings',
 		'menu_title' => 'Admin Settings',
 		'menu_slug' => 'admin-settings',
-		'capability' => 'edit_posts',
+		'capability' => 'manage_options',
 		'icon_url' => 'dashicons-admin-generic',
 		'redirect' => false
 	));
