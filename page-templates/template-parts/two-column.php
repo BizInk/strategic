@@ -50,41 +50,46 @@ if( have_rows('column_section') ):
 							}
 
 							$column_hero_button = get_sub_field('column_hero_button');
-
-							if($column_hero_button['title']) { ?>
-
-								<a href="<?php echo $column_hero_button['url']; ?>" target="<?php echo $column_hero_button['target']; ?>" class="btn navyblue-btn mt-3"><?php echo $column_hero_button['title']; ?><img src="<?php  echo get_stylesheet_directory_uri(); ?>/images/arrow-right.svg" alt=""></a>
-							<?php } ?>
+							if( !empty($column_hero_button)){
+								if($column_hero_button['title']) {
+									?>
+									<a href="<?php echo $column_hero_button['url']; ?>" target="<?php echo $column_hero_button['target']; ?>" class="btn navyblue-btn mt-3"><?php echo $column_hero_button['title']; ?><img src="<?php  echo get_stylesheet_directory_uri(); ?>/images/arrow-right.svg" alt=""></a>
+									<?php
+								} 
+							}
+							?>
 						</div>
 					</div>
 
 					<div class="col-md-6 col-right mb-5 mb-md-0">
 
-						<?php if( $column_image_gallery == 'image' ){
+						<?php
+						if(!empty($column_image_gallery)){
+							if( $column_image_gallery == 'image' ){
+								if(get_sub_field('column_hero_image')) { ?>
+									<img src="<?php echo get_sub_field('column_hero_image'); ?>" class="img-fluid" alt="">
+								<?php }
+							}
+							else if( $column_image_gallery == 'gallery' && have_rows('column_hero_gallery') ){
+								?>
+								<div class="two-col-slider">
+									<?php while( have_rows('column_hero_gallery') ){
+										the_row();
 
-							if(get_sub_field('column_hero_image')) { ?>
-
-								<img src="<?php echo get_sub_field('column_hero_image'); ?>" class="img-fluid" alt="">
-							<?php }
-						}else if( $column_image_gallery == 'gallery' && have_rows('column_hero_gallery') ){ ?>
-
-							<div class="two-col-slider">
-								<?php while( have_rows('column_hero_gallery') ){
-									the_row();
-
-									$column_hero_gallery_image = get_sub_field('column_hero_gallery_image');
-									
-									if( !empty($column_hero_gallery_image['url']) ){ ?>
-
-										<div class="slide"> 
-											<div class="child-element">
-												<img src="<?php echo $column_hero_gallery_image['url']; ?>" alt="<?php echo $column_hero_gallery_image['alt']; ?>"> 
+										$column_hero_gallery_image = get_sub_field('column_hero_gallery_image');
+										if( !empty($column_hero_gallery_image['url']) ){ ?>
+											<div class="slide"> 
+												<div class="child-element">
+													<img src="<?php echo $column_hero_gallery_image['url']; ?>" alt="<?php echo $column_hero_gallery_image['alt']; ?>"> 
+												</div>
 											</div>
-										</div>
-									<?php }
-								} ?>
-							</div>
-						<?php } ?>
+										<?php }
+									} ?>
+								</div>
+							<?php
+							}
+					}
+					?>
 					</div>
 				</div>
 			</div>

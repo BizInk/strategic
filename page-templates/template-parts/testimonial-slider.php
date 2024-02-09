@@ -12,7 +12,9 @@ $new_testimonial_bg = get_sub_field('new_testimonial_bg');
 			<h2><?= $new_testimonial_title; ?></h2>
 			<?= $new_testimonial_content; ?>
 		</div>
+		<?php if(!empty($new_testimonial_button)): ?>
 		<a href="<?= $new_testimonial_button['url']; ?>" class="btn white-btn" target="<?= $new_testimonial_button['target']; ?>"><?= $new_testimonial_button['title']; ?> <img src="<?php  echo get_stylesheet_directory_uri(); ?>/images/arrow-right.svg" alt=""></a>
+		<?php endif; ?>
 	</div>
 
 	<?php if( !empty($new_testimonial_testimonials) ){ ?>
