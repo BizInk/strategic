@@ -642,8 +642,8 @@ function wpdocs_custom_init() {
 }
 
 // Adding option to select gravity form in ACF
-add_filter( 'acf/load_field/name=gravity_forms', 'luca_acf_populate_gf_forms_ids' );
-function luca_acf_populate_gf_forms_ids( $field ) {
+add_filter( 'acf/load_field/name=gravity_forms', 'strategic_acf_populate_gf_forms_ids' );
+function strategic_acf_populate_gf_forms_ids( $field ) {
 	if ( class_exists( 'GFFormsModel' ) ) {
 		$choices = [];
 
@@ -962,7 +962,4 @@ add_action('acf/init', 'my_acf_init');
 require 'plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $myUpdateChecker = PucFactory::buildUpdateChecker('https://github.com/BizInk/strategic',__FILE__,'strategic');
-// Set the branch that contains the stable release.
 $myUpdateChecker->setBranch('master');
-// Using a private repository, specify the access token 
-$myUpdateChecker->setAuthentication('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');
