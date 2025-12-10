@@ -4194,7 +4194,7 @@ function strategic_theme_acf_fileds()
 					'label' => 'Form',
 					'name' => 'global_contact_form',
 					'aria-label' => '',
-					'type' => 'gravity_forms_field',
+					'type' => 'wysiwyg',
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,

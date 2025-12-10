@@ -27,6 +27,12 @@ if(!is_page( 'contact-us' )){
 	$global_contact_phone = get_field('global_contact_phone', 'options');
 	$global_contact_email = get_field('global_contact_email', 'options');
 	$global_contact_form = get_field('global_contact_form', 'options');
+	
+	$facebook = get_field('facebook', 'options');
+	$twitter = get_field('twitter', 'options');
+	$linkedin = get_field('linkedin', 'options');
+	$instagram = get_field('instagram', 'options');
+	$youtube = get_field('youtube', 'options');
 	 ?>
 
 	<section class="get-in-touch comman-padding" style="background-image:url(<?php echo $global_contact_bg; ?>);">
@@ -69,17 +75,43 @@ if(!is_page( 'contact-us' )){
 	                        <?php } ?>
 	                    </ul>
 	                    <ul class="social-nav">
-							<li><a href="https://www.facebook.com/StrategicWealth?mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/nicholas-moustacas-bb78881?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BzdHFCv4cTbaUytB32UwwKw%3D%3D" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>							
+							<?php if( !empty($facebook) ){ ?>
+	                            	
+	                            	<li><a href="<?= $facebook; ?>" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<?php }
+								
+								if( !empty($twitter) ){ ?>
+	                            	
+	                            	<li><a href="<?= $twitter; ?>" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<?php }
+								
+								if( !empty($linkedin) ){ ?>
+	                            	
+	                            	<li><a href="<?= $linkedin; ?>" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								<?php }
+								
+								if( !empty($instagram) ){ ?>
+	                            	
+	                            	<li><a href="<?= $instagram; ?>" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<?php }
+								
+								if( !empty($youtube) ){ ?>
+	                            	
+	                            	<li><a href="<?= $youtube; ?>" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+								<?php }
+								
+								if( !empty($google_my_business) ){ ?>
+	                            	
+	                            	<li><a href="<?= $google_my_business; ?>" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+								<?php } ?>
 						</ul>
 	                </div>
 	            </div> 
 
 	            <div class="col-md-6 col-xxl-7">
 	                <div class="form-wrp">                    
-                		<?php if( !empty($global_contact_form['id']) ){
-	                    	
-	                    	echo do_shortcode('[gravityform id="'. $global_contact_form['id'] .'" title="false"]');
+                		<?php if( !empty($global_contact_form) ){
+	                    	echo do_shortcode($global_contact_form);
 	                    } ?>
 	                </div>
 	            </div>
